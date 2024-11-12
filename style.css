@@ -1,0 +1,437 @@
+:root {
+    --cor1: #1a1918;
+    --cor-botao: #006955;
+    --cor-hover: #034b3c;
+    --verde-secundario: #D3F3D1;
+    --cor-description: #666;
+    --cor-main-content: #f9f9f9;
+    --placeholder: #ccc;
+    --cor-background: #F4F4DB;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter;
+}
+
+body {
+    color: var(--cor1);
+    line-height: 1.6;
+}
+
+h1 {
+    color: var(--cor1);
+}
+
+p {
+    color: var(--cor1);
+}
+
+.header {
+    background: url(assets/fundopizza.png) no-repeat center center/cover;
+    color: var(--cor-main-content);
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.header-content h1 {
+    font-size: 3.5rem;
+}
+
+.header-content .highlight {
+    color: var(--cor-botao);
+}
+
+.header-content .slogan {
+    font-size: 1.5rem;
+    font-style: italic;
+}
+
+/* Estilos do Menu de Navegação */
+.navbar {
+    background-color: var(--cor1);
+    color: var(--cor-main-content);
+    text-align: center;
+    padding: 10px 0;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-menu a {
+    color: var(--cor-main-content);
+    text-decoration: none;
+    padding: 10px;
+}
+
+.nav-menu a:hover {
+    background-color: var(--cor-botao);
+    border-radius: 5px;
+}
+
+/* Responsividade do Menu */
+@media (max-width: 768px) {
+    .nav-menu {
+        flex-direction: column;
+    }
+}
+
+.main-content {
+    padding: 50px 20px;
+    background-color: var(--cor-main-content);
+    
+}
+
+.main-content {
+    padding: 50px 20px;
+    background-color: var(--cor-background);
+}
+
+
+.mais-vendidas {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.mais-vendidas h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.pizza-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.drink-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: var(--cor-main-content);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px var(--cor1);
+    width: 220px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    margin: 10px 0;
+}
+
+.card .description {
+    font-size: 0.9rem;
+    color: var(--cor-description);
+    margin-bottom: 10px;
+}
+
+.card .price {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: var(--cor1);
+    margin-bottom: 10px;
+}
+
+.card button {
+    background-color: var(--cor-botao);
+    padding-top: 34px;
+    margin-top: 23px;
+    color: var(--cor-main-content);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.card button:hover {
+    background-color: var(--cor-hover);
+}
+
+.sobre {
+    max-width: 1200px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+.sobre .sobre-content {
+    display: flex;
+    background-color: var(--verde-secundario);
+    padding: 29px;
+    border-radius: 40px;
+    border: 2px dashed var(--cor-botao);
+}
+
+.sobre-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.sobre-content img {
+    display: flex;
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+    flex: 2;
+}
+
+.sobre-content div {
+    /* flex: 2; */
+    flex: 2;
+    padding-right: 10px;
+}
+
+.sobre-content h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.sobre-content p {
+    line-height: 1.6;
+}
+
+.sobre-content button {
+    background-color: var(--cor-botao);
+    color: var(--cor-main-content);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 15px;
+}
+
+.sobre-content button:hover {
+    background-color: var(--cor-hover);
+}
+
+.footer {
+    background-color: var(--cor1);
+    color: var(--cor-main-content);
+    text-align: center;
+    padding: 20px;
+}
+
+#p-footer {
+    color: var(--cor-main-content);
+}
+
+.main-content .menu-section {
+    background-color: var(--verde-secundario);
+    padding: 25px 30px;
+    margin: 20px;
+    border-radius: 50px;
+    border: 1px solid var(--cor-hover)
+}
+
+.menu-section h2 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+
+/* Formulário de contato */
+
+.form-style {
+    color: var(--cor-main-content);
+    background-color: var(--verde-secundario);
+    padding: 23px 30px;
+    border-radius: 40px;
+    border: 1px var(--cor-hover);
+    border-style: dotted;
+}
+
+.form-style h2 {
+    color: var(--cor-hover);
+}
+
+.contact-form label {
+    color: var(--cor-botao);
+}
+
+.contact-section {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-form label, .contact-form input, .contact-form textarea {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--placeholder);
+}
+
+.contact-form button {
+    background-color: var(--cor-botao);
+    color: var(--cor-main-content);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.back-to-home {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.home-button {
+    display: inline-block;
+    background-color: var(--cor-botao);
+    color: var(--cor-main-content); 
+    padding: 10px 20px;  
+    font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+    background-color: var(--cor-hover);
+    cursor: pointer;
+}
+
+/* Clube da Pizza */
+
+
+.main-content .benefits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 500%;
+    max-width: 90%;
+    align-content: center;
+    margin: 10px 50px 60px 50px;
+}
+
+.main-content .plans {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 94%;
+    margin: 10px 50px 10px 35px;
+}
+
+.benefits, .plans {
+    display: flex;
+    width: 500%;
+    max-width: 1000px;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px var(--placeholder);
+    text-align: center;
+}
+
+
+.benefits h2, .plans h2 {
+    color: var(--cor-hover);
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.benefits ul {
+    list-style-type: disc;
+    padding-left: 2rem;
+    text-align: left;
+}
+
+.plan {
+    padding: 1.8rem;
+    background: linear-gradient(139deg, var(--verde-secundario), var(--cor-background));
+    border: 2px solid var(--cor1);
+    border-radius: 12px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 25px;
+}
+
+.plan:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* .subscribe {
+    padding: 0.4rem 0.5rem;
+    background-color: var(--cor-botao);
+    color: var(--cor-main-content);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.subscribe :hover {
+    background-color: #034b3c;
+} */
+
+.plans h2 {
+    color: var(--cor-hover);
+}
+
+/* Localização */
+.location-section {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.map {
+    border: none;
+    border-radius: 20px;
+    margin-top: 20px;
+    width: 100%;
+    height: 400px;
+}
+
+/* Botão de Voltar */
+
+.voltar button {
+    background-color: var(--cor-botao);
+}
+
+.voltar :hover {
+    background-color: var(--cor-hover);
+}
