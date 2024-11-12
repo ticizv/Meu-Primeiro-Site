@@ -38,7 +38,7 @@ Clone este repositório:
 
 bash
 Copiar código
-git clone https://github.com/ticizv/pizza-e-prosa.git
+git clone https://github.com/ticizv/projeto-pizzaria.git
 Abra o projeto em seu editor de código favorito (ex: Visual Studio Code).
 
 Inicie um servidor local:
